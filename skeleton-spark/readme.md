@@ -31,3 +31,15 @@ http://www.scala-lang.org/files/archive/nightly/docs-2.10.2/manual/html/scalac.h
 `-explaintypes` - Более подробная информация об ошибках
 
 `-Xfatal-warnings` - Остановка компиляции при любых предупреждениях
+
+
+# Gradle
+- Сильно меняется API, много - The plugins DSL is currently incubating.
+- не работает из коробки сборка JAR файла с зависимостями, подключил shadowJar (до этого пробывал fatJar, работает ужасно долго, получил ошибку -archive contains more than 65535, побороть не смог)
+- гигантская документация https://docs.gradle.org/current/userguide/userguide.html, за 5 минут не разберешся
+- итоговый JAR файл стал весить 190M
+
+```
+gradle init --type pom
+gradle shadowJar
+```
