@@ -82,3 +82,5 @@ scalacOptions ++= Seq(
 )
 
 assemblyOption in assembly := (assemblyOption in assembly).value.copy(includeScala = false)
+
+mainClass in assembly := Some("HelloScala")
