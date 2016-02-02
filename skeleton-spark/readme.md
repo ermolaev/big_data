@@ -43,3 +43,17 @@ http://www.scala-lang.org/files/archive/nightly/docs-2.10.2/manual/html/scalac.h
 gradle init --type pom
 gradle shadowJar
 ```
+
+# SBT
+- конвертер pom -> sbt, https://github.com/ajozwik/mvn2sbt
+```
+git clone https://github.com/ajozwik/mvn2sbt.git
+cd mvn2sbt
+scala Eff.sc /home/ermolaev/big_data/skeleton-spark
+set javaOptions +="[-Dscala.version=2.11.0] [-Dsbt.version=0.13.9]"; converter/run /home/ermolaev/big_data/skeleton-spark'
+```
+- сборка в супер-jar - https://github.com/sbt/sbt-assembly
+- не умееет разруливать зависимости (shading), как это делают Maven, Gradle, пришлось некоторым зависимостям прописать provided, не проходил тест при указании зависимости `'org.apache.hadoop-common_2.10' % "provided"`, ошибка как https://issues.apache.org/jira/browse/SPARK-1693
+- конфигурационный файл самый удобный
+- размер итогового jar файла 60M
+- пожалуй мой выбор
