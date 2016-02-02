@@ -1,0 +1,278 @@
+[INFO] Scanning for projects...
+Downloading: http://scala-tools.org/repo-releases/org/apache/maven/plugins/maven-deploy-plugin/2.7/maven-deploy-plugin-2.7.pom
+Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-deploy-plugin/2.7/maven-deploy-plugin-2.7.pom
+4/6 KB   6/6 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-deploy-plugin/2.7/maven-deploy-plugin-2.7.pom (6 KB at 6.6 KB/sec)
+Downloading: http://scala-tools.org/repo-releases/org/apache/maven/plugins/maven-deploy-plugin/2.7/maven-deploy-plugin-2.7.jar
+         Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-deploy-plugin/2.7/maven-deploy-plugin-2.7.jar
+4/27 KB   8/27 KB   12/27 KB   16/27 KB   20/27 KB   24/27 KB   27/27 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-deploy-plugin/2.7/maven-deploy-plugin-2.7.jar (27 KB at 124.2 KB/sec)
+Downloading: http://scala-tools.org/repo-releases/org/apache/maven/plugins/maven-site-plugin/3.3/maven-site-plugin-3.3.pom
+           Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-site-plugin/3.3/maven-site-plugin-3.3.pom
+4/21 KB    8/21 KB   12/21 KB   16/21 KB   20/21 KB   21/21 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-site-plugin/3.3/maven-site-plugin-3.3.pom (21 KB at 179.9 KB/sec)
+Downloading: http://scala-tools.org/repo-releases/org/apache/maven/plugins/maven-site-plugin/3.3/maven-site-plugin-3.3.jar
+           Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-site-plugin/3.3/maven-site-plugin-3.3.jar
+4/122 KB   8/122 KB   12/122 KB   16/122 KB   20/122 KB   24/122 KB   28/122 KB   32/122 KB   36/122 KB   40/122 KB   44/122 KB   48/122 KB   52/122 KB   56/122 KB   60/122 KB   64/122 KB   68/122 KB   72/122 KB   76/122 KB   80/122 KB   84/122 KB   88/122 KB   92/122 KB   96/122 KB   100/122 KB   104/122 KB   108/122 KB   112/122 KB   116/122 KB   120/122 KB   122/122 KB                Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-site-plugin/3.3/maven-site-plugin-3.3.jar (122 KB at 547.0 KB/sec)
+Downloading: http://scala-tools.org/repo-releases/org/apache/maven/plugins/maven-antrun-plugin/1.3/maven-antrun-plugin-1.3.pom
+             Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-antrun-plugin/1.3/maven-antrun-plugin-1.3.pom
+4/5 KB       5/5 KB            Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-antrun-plugin/1.3/maven-antrun-plugin-1.3.pom (5 KB at 47.1 KB/sec)
+Downloading: http://scala-tools.org/repo-releases/org/apache/maven/plugins/maven-plugins/12/maven-plugins-12.pom
+         Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/12/maven-plugins-12.pom
+4/12 KB   8/12 KB   12/12 KB   12/12 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/12/maven-plugins-12.pom (12 KB at 95.6 KB/sec)
+Downloading: http://scala-tools.org/repo-releases/org/apache/maven/plugins/maven-antrun-plugin/1.3/maven-antrun-plugin-1.3.jar
+           Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-antrun-plugin/1.3/maven-antrun-plugin-1.3.jar
+4/24 KB    8/24 KB   12/24 KB   16/24 KB   20/24 KB   24/24 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-antrun-plugin/1.3/maven-antrun-plugin-1.3.jar (24 KB at 193.4 KB/sec)
+Downloading: http://scala-tools.org/repo-releases/org/apache/maven/plugins/maven-assembly-plugin/2.2-beta-5/maven-assembly-plugin-2.2-beta-5.pom
+           Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-assembly-plugin/2.2-beta-5/maven-assembly-plugin-2.2-beta-5.pom
+4/15 KB    8/15 KB   12/15 KB   15/15 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-assembly-plugin/2.2-beta-5/maven-assembly-plugin-2.2-beta-5.pom (15 KB at 115.7 KB/sec)
+Downloading: http://scala-tools.org/repo-releases/org/apache/maven/plugins/maven-plugins/16/maven-plugins-16.pom
+           Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/16/maven-plugins-16.pom
+4/13 KB    8/13 KB   12/13 KB   13/13 KB              Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/16/maven-plugins-16.pom (13 KB at 101.2 KB/sec)
+Downloading: http://scala-tools.org/repo-releases/org/apache/maven/plugins/maven-assembly-plugin/2.2-beta-5/maven-assembly-plugin-2.2-beta-5.jar
+           Downloading: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-assembly-plugin/2.2-beta-5/maven-assembly-plugin-2.2-beta-5.jar
+3/204 KB   7/204 KB   11/204 KB   15/204 KB   19/204 KB   23/204 KB   27/204 KB   31/204 KB   35/204 KB   39/204 KB   43/204 KB   47/204 KB   51/204 KB   55/204 KB   59/204 KB   63/204 KB   67/204 KB   71/204 KB   75/204 KB   79/204 KB   83/204 KB   87/204 KB   91/204 KB   95/204 KB   99/204 KB   103/204 KB   107/204 KB   111/204 KB   115/204 KB   119/204 KB   123/204 KB   127/204 KB   131/204 KB   135/204 KB   139/204 KB   143/204 KB   147/204 KB   151/204 KB   155/204 KB   159/204 KB   163/204 KB   167/204 KB   171/204 KB   175/204 KB   179/204 KB   183/204 KB   187/204 KB   191/204 KB   195/204 KB   199/204 KB   203/204 KB   204/204 KB                Downloaded: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-assembly-plugin/2.2-beta-5/maven-assembly-plugin-2.2-beta-5.jar (204 KB at 455.3 KB/sec)
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Kafka Spark Streaming 0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ test-streaming ---
+[INFO] ermolaev:test-streaming:jar:0.1-SNAPSHOT
+[INFO] +- org.apache.spark:spark-core_2.10:jar:1.5.2:provided
+[INFO] |  +- org.apache.avro:avro-mapred:jar:hadoop2:1.7.7:compile
+[INFO] |  |  +- org.apache.avro:avro-ipc:jar:1.7.7:compile
+[INFO] |  |  \- org.apache.avro:avro-ipc:jar:tests:1.7.7:compile
+[INFO] |  +- com.twitter:chill_2.10:jar:0.5.0:provided
+[INFO] |  |  \- com.esotericsoftware.kryo:kryo:jar:2.21:provided
+[INFO] |  |     +- com.esotericsoftware.reflectasm:reflectasm:jar:shaded:1.07:provided
+[INFO] |  |     +- com.esotericsoftware.minlog:minlog:jar:1.2:provided
+[INFO] |  |     \- org.objenesis:objenesis:jar:1.2:provided
+[INFO] |  +- com.twitter:chill-java:jar:0.5.0:provided
+[INFO] |  +- org.apache.hadoop:hadoop-client:jar:2.2.0:provided
+[INFO] |  |  +- org.apache.hadoop:hadoop-hdfs:jar:2.2.0:provided
+[INFO] |  |  +- org.apache.hadoop:hadoop-mapreduce-client-app:jar:2.2.0:provided
+[INFO] |  |  |  +- org.apache.hadoop:hadoop-mapreduce-client-common:jar:2.2.0:provided
+[INFO] |  |  |  |  +- org.apache.hadoop:hadoop-yarn-client:jar:2.2.0:provided
+[INFO] |  |  |  |  |  +- com.google.inject:guice:jar:3.0:provided
+[INFO] |  |  |  |  |  |  +- javax.inject:javax.inject:jar:1:provided
+[INFO] |  |  |  |  |  |  \- aopalliance:aopalliance:jar:1.0:provided
+[INFO] |  |  |  |  |  +- com.sun.jersey.jersey-test-framework:jersey-test-framework-grizzly2:jar:1.9:provided
+[INFO] |  |  |  |  |  |  +- com.sun.jersey.jersey-test-framework:jersey-test-framework-core:jar:1.9:provided
+[INFO] |  |  |  |  |  |  |  +- javax.servlet:javax.servlet-api:jar:3.0.1:provided
+[INFO] |  |  |  |  |  |  |  \- com.sun.jersey:jersey-client:jar:1.9:provided
+[INFO] |  |  |  |  |  |  \- com.sun.jersey:jersey-grizzly2:jar:1.9:provided
+[INFO] |  |  |  |  |  |     +- org.glassfish.grizzly:grizzly-http:jar:2.1.2:provided
+[INFO] |  |  |  |  |  |     |  \- org.glassfish.grizzly:grizzly-framework:jar:2.1.2:provided
+[INFO] |  |  |  |  |  |     |     \- org.glassfish.gmbal:gmbal-api-only:jar:3.0.0-b023:provided
+[INFO] |  |  |  |  |  |     |        \- org.glassfish.external:management-api:jar:3.0.0-b012:provided
+[INFO] |  |  |  |  |  |     +- org.glassfish.grizzly:grizzly-http-server:jar:2.1.2:provided
+[INFO] |  |  |  |  |  |     |  \- org.glassfish.grizzly:grizzly-rcm:jar:2.1.2:provided
+[INFO] |  |  |  |  |  |     +- org.glassfish.grizzly:grizzly-http-servlet:jar:2.1.2:provided
+[INFO] |  |  |  |  |  |     \- org.glassfish:javax.servlet:jar:3.1:provided
+[INFO] |  |  |  |  |  \- com.sun.jersey.contribs:jersey-guice:jar:1.9:provided
+[INFO] |  |  |  |  \- org.apache.hadoop:hadoop-yarn-server-common:jar:2.2.0:provided
+[INFO] |  |  |  \- org.apache.hadoop:hadoop-mapreduce-client-shuffle:jar:2.2.0:provided
+[INFO] |  |  +- org.apache.hadoop:hadoop-yarn-api:jar:2.2.0:provided
+[INFO] |  |  +- org.apache.hadoop:hadoop-mapreduce-client-core:jar:2.2.0:provided
+[INFO] |  |  |  \- org.apache.hadoop:hadoop-yarn-common:jar:2.2.0:provided
+[INFO] |  |  \- org.apache.hadoop:hadoop-mapreduce-client-jobclient:jar:2.2.0:provided
+[INFO] |  +- org.apache.spark:spark-launcher_2.10:jar:1.5.2:provided
+[INFO] |  +- org.apache.spark:spark-network-common_2.10:jar:1.5.2:provided
+[INFO] |  +- org.apache.spark:spark-network-shuffle_2.10:jar:1.5.2:provided
+[INFO] |  +- org.apache.spark:spark-unsafe_2.10:jar:1.5.2:provided
+[INFO] |  +- net.java.dev.jets3t:jets3t:jar:0.7.1:provided
+[INFO] |  +- org.apache.curator:curator-recipes:jar:2.4.0:provided
+[INFO] |  |  \- org.apache.curator:curator-framework:jar:2.4.0:provided
+[INFO] |  +- org.eclipse.jetty.orbit:javax.servlet:jar:3.0.0.v201112011016:provided
+[INFO] |  +- org.apache.commons:commons-lang3:jar:3.3.2:compile
+[INFO] |  +- org.apache.commons:commons-math3:jar:3.4.1:compile
+[INFO] |  +- com.google.code.findbugs:jsr305:jar:1.3.9:compile
+[INFO] |  +- org.slf4j:jul-to-slf4j:jar:1.7.10:provided
+[INFO] |  +- org.slf4j:jcl-over-slf4j:jar:1.7.10:provided
+[INFO] |  +- log4j:log4j:jar:1.2.17:compile
+[INFO] |  +- com.ning:compress-lzf:jar:1.0.3:provided
+[INFO] |  +- org.xerial.snappy:snappy-java:jar:1.1.1.7:compile
+[INFO] |  +- net.jpountz.lz4:lz4:jar:1.3.0:compile
+[INFO] |  +- org.roaringbitmap:RoaringBitmap:jar:0.4.5:provided
+[INFO] |  +- commons-net:commons-net:jar:2.2:provided
+[INFO] |  +- com.typesafe.akka:akka-remote_2.10:jar:2.3.11:provided
+[INFO] |  |  +- com.typesafe.akka:akka-actor_2.10:jar:2.3.11:provided
+[INFO] |  |  |  \- com.typesafe:config:jar:1.2.1:provided
+[INFO] |  |  +- io.netty:netty:jar:3.8.0.Final:compile
+[INFO] |  |  \- org.uncommons.maths:uncommons-maths:jar:1.2.2a:provided
+[INFO] |  +- com.typesafe.akka:akka-slf4j_2.10:jar:2.3.11:provided
+[INFO] |  +- org.json4s:json4s-jackson_2.10:jar:3.2.10:provided
+[INFO] |  |  \- org.json4s:json4s-core_2.10:jar:3.2.10:provided
+[INFO] |  |     +- org.json4s:json4s-ast_2.10:jar:3.2.10:provided
+[INFO] |  |     \- org.scala-lang:scalap:jar:2.10.0:provided
+[INFO] |  |        \- org.scala-lang:scala-compiler:jar:2.10.0:provided
+[INFO] |  +- com.sun.jersey:jersey-server:jar:1.9:provided
+[INFO] |  |  \- asm:asm:jar:3.1:provided
+[INFO] |  +- com.sun.jersey:jersey-core:jar:1.9:provided
+[INFO] |  +- org.apache.mesos:mesos:jar:shaded-protobuf:0.21.1:provided
+[INFO] |  +- io.netty:netty-all:jar:4.0.29.Final:provided
+[INFO] |  +- com.clearspring.analytics:stream:jar:2.7.0:provided
+[INFO] |  +- io.dropwizard.metrics:metrics-core:jar:3.1.2:provided
+[INFO] |  +- io.dropwizard.metrics:metrics-jvm:jar:3.1.2:provided
+[INFO] |  +- io.dropwizard.metrics:metrics-json:jar:3.1.2:provided
+[INFO] |  +- io.dropwizard.metrics:metrics-graphite:jar:3.1.2:provided
+[INFO] |  +- com.fasterxml.jackson.core:jackson-databind:jar:2.4.4:provided
+[INFO] |  |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.4.0:provided
+[INFO] |  |  \- com.fasterxml.jackson.core:jackson-core:jar:2.4.4:provided
+[INFO] |  +- com.fasterxml.jackson.module:jackson-module-scala_2.10:jar:2.4.4:provided
+[INFO] |  |  \- com.thoughtworks.paranamer:paranamer:jar:2.6:compile
+[INFO] |  +- org.apache.ivy:ivy:jar:2.4.0:provided
+[INFO] |  +- oro:oro:jar:2.0.8:compile
+[INFO] |  +- org.tachyonproject:tachyon-client:jar:0.7.1:provided
+[INFO] |  |  +- org.tachyonproject:tachyon-underfs-hdfs:jar:0.7.1:provided
+[INFO] |  |  \- org.tachyonproject:tachyon-underfs-local:jar:0.7.1:provided
+[INFO] |  +- net.razorvine:pyrolite:jar:4.4:provided
+[INFO] |  +- net.sf.py4j:py4j:jar:0.8.2.1:provided
+[INFO] |  \- org.spark-project.spark:unused:jar:1.0.0:compile
+[INFO] +- com.github.nscala-time:nscala-time_2.10:jar:2.0.0:compile
+[INFO] |  +- joda-time:joda-time:jar:2.7:compile
+[INFO] |  \- org.joda:joda-convert:jar:1.2:compile
+[INFO] +- mysql:mysql-connector-java:jar:5.1.28:compile
+[INFO] +- org.scalaz:scalaz-core_2.10:jar:7.1.3:compile
+[INFO] +- org.scalatest:scalatest_2.10:jar:2.2.4:compile
+[INFO] |  \- org.scala-lang:scala-reflect:jar:2.10.4:compile
+[INFO] +- com.holdenkarau:spark-testing-base_2.10:jar:1.4.1_0.1.1:test
+[INFO] |  +- io.github.nicolasstucki:multisets_2.10:jar:0.1:test
+[INFO] |  +- org.scalacheck:scalacheck_2.10:jar:1.12.4:test
+[INFO] |  |  \- org.scala-sbt:test-interface:jar:1.0:test
+[INFO] |  \- junit:junit:jar:4.10:compile
+[INFO] |     \- org.hamcrest:hamcrest-core:jar:1.1:compile
+[INFO] +- org.apache.spark:spark-streaming_2.10:jar:1.5.2:provided
+[INFO] +- org.apache.spark:spark-streaming-kafka_2.10:jar:1.5.2:compile
+[INFO] |  \- org.apache.kafka:kafka_2.10:jar:0.8.2.1:compile
+[INFO] |     +- com.yammer.metrics:metrics-core:jar:2.2.0:compile
+[INFO] |     +- org.apache.kafka:kafka-clients:jar:0.8.2.1:compile
+[INFO] |     \- com.101tec:zkclient:jar:0.3:compile
+[INFO] +- org.apache.hadoop:hadoop-common:jar:2.6.0:provided
+[INFO] |  +- org.apache.hadoop:hadoop-annotations:jar:2.6.0:provided
+[INFO] |  |  \- jdk.tools:jdk.tools:jar:1.6:system
+[INFO] |  +- com.google.guava:guava:jar:11.0.2:compile
+[INFO] |  +- commons-cli:commons-cli:jar:1.2:compile
+[INFO] |  +- xmlenc:xmlenc:jar:0.52:provided
+[INFO] |  +- commons-httpclient:commons-httpclient:jar:3.1:compile
+[INFO] |  +- commons-codec:commons-codec:jar:1.4:compile
+[INFO] |  +- commons-io:commons-io:jar:2.4:compile
+[INFO] |  +- commons-collections:commons-collections:jar:3.2.1:compile
+[INFO] |  +- javax.servlet:servlet-api:jar:2.5:provided
+[INFO] |  +- org.mortbay.jetty:jetty:jar:6.1.26:runtime
+[INFO] |  +- org.mortbay.jetty:jetty-util:jar:6.1.26:runtime
+[INFO] |  +- com.sun.jersey:jersey-json:jar:1.9:provided
+[INFO] |  |  +- org.codehaus.jettison:jettison:jar:1.1:provided
+[INFO] |  |  +- com.sun.xml.bind:jaxb-impl:jar:2.2.3-1:provided
+[INFO] |  |  |  \- javax.xml.bind:jaxb-api:jar:2.2.2:provided
+[INFO] |  |  |     +- javax.xml.stream:stax-api:jar:1.0-2:provided
+[INFO] |  |  |     \- javax.activation:activation:jar:1.1:provided
+[INFO] |  |  +- org.codehaus.jackson:jackson-jaxrs:jar:1.8.3:provided
+[INFO] |  |  \- org.codehaus.jackson:jackson-xc:jar:1.8.3:provided
+[INFO] |  +- tomcat:jasper-compiler:jar:5.5.23:provided
+[INFO] |  +- tomcat:jasper-runtime:jar:5.5.23:provided
+[INFO] |  +- javax.servlet.jsp:jsp-api:jar:2.1:provided
+[INFO] |  +- commons-el:commons-el:jar:1.0:provided
+[INFO] |  +- commons-logging:commons-logging:jar:1.1.3:compile
+[INFO] |  +- commons-lang:commons-lang:jar:2.6:compile
+[INFO] |  +- commons-configuration:commons-configuration:jar:1.6:provided
+[INFO] |  |  +- commons-digester:commons-digester:jar:1.8:provided
+[INFO] |  |  |  \- commons-beanutils:commons-beanutils:jar:1.7.0:provided
+[INFO] |  |  \- commons-beanutils:commons-beanutils-core:jar:1.8.0:provided
+[INFO] |  +- org.slf4j:slf4j-log4j12:jar:1.7.5:compile
+[INFO] |  +- org.codehaus.jackson:jackson-core-asl:jar:1.9.13:compile
+[INFO] |  +- org.codehaus.jackson:jackson-mapper-asl:jar:1.9.13:compile
+[INFO] |  +- org.apache.avro:avro:jar:1.7.4:compile
+[INFO] |  +- com.google.protobuf:protobuf-java:jar:2.5.0:provided
+[INFO] |  +- com.google.code.gson:gson:jar:2.2.4:provided
+[INFO] |  +- org.apache.hadoop:hadoop-auth:jar:2.6.0:provided
+[INFO] |  |  +- org.apache.httpcomponents:httpclient:jar:4.2.5:compile
+[INFO] |  |  |  \- org.apache.httpcomponents:httpcore:jar:4.2.4:compile
+[INFO] |  |  \- org.apache.directory.server:apacheds-kerberos-codec:jar:2.0.0-M15:provided
+[INFO] |  |     +- org.apache.directory.server:apacheds-i18n:jar:2.0.0-M15:provided
+[INFO] |  |     +- org.apache.directory.api:api-asn1-api:jar:1.0.0-M20:provided
+[INFO] |  |     \- org.apache.directory.api:api-util:jar:1.0.0-M20:provided
+[INFO] |  +- com.jcraft:jsch:jar:0.1.42:provided
+[INFO] |  +- org.apache.curator:curator-client:jar:2.6.0:provided
+[INFO] |  +- org.htrace:htrace-core:jar:3.0.4:provided
+[INFO] |  +- org.apache.zookeeper:zookeeper:jar:3.4.6:compile
+[INFO] |  \- org.apache.commons:commons-compress:jar:1.4.1:compile
+[INFO] |     \- org.tukaani:xz:jar:1.0:compile
+[INFO] +- org.slf4j:slf4j-api:jar:1.7.5:provided
+[INFO] +- org.scalamock:scalamock-scalatest-support_2.10:jar:3.2:test
+[INFO] |  \- org.scalamock:scalamock-core_2.10:jar:3.2:test
+[INFO] +- org.scalanlp:breeze_2.10:jar:0.9:compile
+[INFO] |  +- org.scalanlp:breeze-macros_2.10:jar:0.3.1:compile
+[INFO] |  |  \- org.scalamacros:quasiquotes_2.10:jar:2.0.0-M8:compile
+[INFO] |  +- com.github.fommil.netlib:core:jar:1.1.2:compile
+[INFO] |  +- net.sourceforge.f2j:arpack_combined_all:jar:0.1:compile
+[INFO] |  +- net.sf.opencsv:opencsv:jar:2.3:compile
+[INFO] |  +- com.github.rwl:jtransforms:jar:2.4.0:compile
+[INFO] |  \- org.spire-math:spire_2.10:jar:0.7.4:compile
+[INFO] |     \- org.spire-math:spire-macros_2.10:jar:0.7.4:compile
+[INFO] +- org.scala-lang:scala-library:jar:2.10.4:provided
+[INFO] +- com.twitter:parquet-hadoop:jar:1.6.0:provided
+[INFO] |  +- com.twitter:parquet-column:jar:1.6.0:provided
+[INFO] |  |  +- com.twitter:parquet-common:jar:1.6.0:provided
+[INFO] |  |  \- com.twitter:parquet-encoding:jar:1.6.0:provided
+[INFO] |  |     \- com.twitter:parquet-generator:jar:1.6.0:provided
+[INFO] |  +- com.twitter:parquet-format:jar:2.2.0-rc1:provided
+[INFO] |  \- com.twitter:parquet-jackson:jar:1.6.0:provided
+[INFO] +- com.twitter:parquet-hive-bundle:jar:1.6.0:provided
+[INFO] +- org.apache.spark:spark-sql_2.10:jar:1.5.2:provided
+[INFO] |  +- org.apache.spark:spark-catalyst_2.10:jar:1.5.2:provided
+[INFO] |  |  \- org.codehaus.janino:janino:jar:2.7.8:provided
+[INFO] |  |     \- org.codehaus.janino:commons-compiler:jar:2.7.8:provided
+[INFO] |  +- org.apache.parquet:parquet-column:jar:1.7.0:provided
+[INFO] |  |  +- org.apache.parquet:parquet-common:jar:1.7.0:provided
+[INFO] |  |  \- org.apache.parquet:parquet-encoding:jar:1.7.0:provided
+[INFO] |  |     \- org.apache.parquet:parquet-generator:jar:1.7.0:provided
+[INFO] |  \- org.apache.parquet:parquet-hadoop:jar:1.7.0:provided
+[INFO] |     +- org.apache.parquet:parquet-format:jar:2.3.0-incubating:provided
+[INFO] |     \- org.apache.parquet:parquet-jackson:jar:1.7.0:provided
+[INFO] +- com.datastax.spark:spark-cassandra-connector_2.10:jar:1.3.0:compile
+[INFO] |  +- org.apache.cassandra:cassandra-clientutil:jar:2.1.5:compile
+[INFO] |  \- com.twitter:jsr166e:jar:1.1.0:compile
+[INFO] +- org.apache.spark:spark-hive_2.10:jar:1.3.0:compile
+[INFO] |  +- org.spark-project.hive:hive-metastore:jar:0.13.1a:compile
+[INFO] |  |  +- org.spark-project.hive:hive-shims:jar:0.13.1a:compile
+[INFO] |  |  |  +- org.spark-project.hive.shims:hive-shims-common:jar:0.13.1a:compile
+[INFO] |  |  |  +- org.spark-project.hive.shims:hive-shims-0.20:jar:0.13.1a:runtime
+[INFO] |  |  |  +- org.spark-project.hive.shims:hive-shims-common-secure:jar:0.13.1a:compile
+[INFO] |  |  |  +- org.spark-project.hive.shims:hive-shims-0.20S:jar:0.13.1a:runtime
+[INFO] |  |  |  \- org.spark-project.hive.shims:hive-shims-0.23:jar:0.13.1a:runtime
+[INFO] |  |  +- com.jolbox:bonecp:jar:0.8.0.RELEASE:compile
+[INFO] |  |  +- org.apache.derby:derby:jar:10.10.1.1:compile
+[INFO] |  |  +- org.datanucleus:datanucleus-api-jdo:jar:3.2.6:compile
+[INFO] |  |  +- org.datanucleus:datanucleus-core:jar:3.2.10:compile
+[INFO] |  |  +- org.datanucleus:datanucleus-rdbms:jar:3.2.9:compile
+[INFO] |  |  +- javax.jdo:jdo-api:jar:3.0.1:compile
+[INFO] |  |  |  \- javax.transaction:jta:jar:1.1:compile
+[INFO] |  |  +- org.antlr:antlr-runtime:jar:3.4:compile
+[INFO] |  |  |  +- org.antlr:stringtemplate:jar:3.2.1:compile
+[INFO] |  |  |  \- antlr:antlr:jar:2.7.7:compile
+[INFO] |  |  +- org.apache.thrift:libfb303:jar:0.9.0:compile
+[INFO] |  |  \- org.apache.thrift:libthrift:jar:0.9.0:compile
+[INFO] |  +- org.spark-project.hive:hive-exec:jar:0.13.1a:compile
+[INFO] |  |  +- org.spark-project.hive:hive-ant:jar:0.13.1a:compile
+[INFO] |  |  |  \- org.apache.velocity:velocity:jar:1.5:compile
+[INFO] |  |  +- org.spark-project.hive:hive-common:jar:0.13.1a:compile
+[INFO] |  |  +- com.twitter:parquet-hadoop-bundle:jar:1.3.2:compile
+[INFO] |  |  +- javolution:javolution:jar:5.5.1:compile
+[INFO] |  |  +- org.antlr:ST4:jar:4.0.4:compile
+[INFO] |  |  +- org.apache.ant:ant:jar:1.9.1:compile
+[INFO] |  |  |  \- org.apache.ant:ant-launcher:jar:1.9.1:compile
+[INFO] |  |  +- org.codehaus.groovy:groovy-all:jar:2.1.6:compile
+[INFO] |  |  +- org.spark-project.protobuf:protobuf-java:jar:2.5.0-spark:compile
+[INFO] |  |  +- com.googlecode.javaewah:JavaEWAH:jar:0.3.2:compile
+[INFO] |  |  +- org.iq80.snappy:snappy:jar:0.2:compile
+[INFO] |  |  +- org.json:json:jar:20090211:compile
+[INFO] |  |  \- stax:stax-api:jar:1.0.1:compile
+[INFO] |  \- org.spark-project.hive:hive-serde:jar:0.13.1a:compile
+[INFO] \- com.datastax.cassandra:cassandra-driver-core:jar:2.1.4:compile
+[INFO]    \- com.codahale.metrics:metrics-core:jar:3.0.2:compile
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 8.344 s
+[INFO] Finished at: 2016-02-02T16:25:13+03:00
+[INFO] Final Memory: 24M/202M
+[INFO] ------------------------------------------------------------------------

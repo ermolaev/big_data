@@ -56,4 +56,5 @@ set javaOptions +="[-Dscala.version=2.11.0] [-Dsbt.version=0.13.9]"; converter/r
 - не умееет разруливать зависимости (shading), как это делают Maven, Gradle, пришлось некоторым зависимостям прописать provided, не проходил тест при указании зависимости `'org.apache.hadoop-common_2.10' % "provided"`, ошибка как https://issues.apache.org/jira/browse/SPARK-1693
 - конфигурационный файл самый удобный
 - размер итогового jar файла 60M
+- в spark уже встроена scala, значит можем её не компилировать, экономия 10M
 - пожалуй мой выбор
