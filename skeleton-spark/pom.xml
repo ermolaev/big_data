@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>ermolaev</groupId>
   <artifactId>test-streaming</artifactId>
-  <version>0.102-SNAPSHOT</version>
+  <version>0.103-SNAPSHOT</version>
   <packaging>jar</packaging>
   <name>Kafka Spark Streaming</name>
   <properties>
