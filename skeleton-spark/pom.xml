@@ -322,7 +322,7 @@
         <artifactId>maven-shade-plugin</artifactId>
         <version>1.4</version>
         <configuration>
-          <createDependencyReducedPom>true</createDependencyReducedPom>
+          <createDependencyReducedPom>false</createDependencyReducedPom>
         </configuration>
         <executions>
           <execution>
