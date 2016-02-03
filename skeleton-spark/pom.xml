@@ -28,6 +28,11 @@
      <name>testrepo</name>
      <url>http://localhost:8081/nexus/content/repositories/testrepo</url>
    </repository>
+   <snapshotRepository>
+     <id>nexus</id>
+     <name>jazzteam snapshot repository</name>
+     <url>http://localhost:8081/nexus/content/repositories/snapshots</url>
+   </snapshotRepository>
   </distributionManagement>
   <repositories>
     <repository>
