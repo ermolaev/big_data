@@ -58,3 +58,20 @@ set javaOptions +="[-Dscala.version=2.11.0] [-Dsbt.version=0.13.9]"; converter/r
 - размер итогового jar файла 60M
 - в spark уже встроена scala, значит можем её не компилировать, экономия 10M
 - пожалуй мой выбор
+
+43516197
+# Nexus Repository Manager 3.0 (Milestone 7 Release)
+```
+cd ~/soft
+wget http://download.sonatype.com/nexus/3/nexus-3.0.0-m7-unix.tar.gz
+tar xvzf nexus-3.0.0-m7-unix.tar.gz
+rm -rf nexus-3.0.0-m7-unix.tar.gz
+./nexus run
+nexus-3.0.0-b2016011501/bin/nexus run
+```
+
+```
+mvn release:prepare
+mvn release:perform
+```
+войти как администратор `admin:admin123`
