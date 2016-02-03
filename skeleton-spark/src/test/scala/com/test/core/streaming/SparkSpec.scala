@@ -9,6 +9,7 @@ trait SparkSpec extends BeforeAndAfterAll {
   private val master = "local[2]"
   private val appName = this.getClass.getSimpleName
 
+  // scalastyle:off
   private var _sc: SparkContext = _
 
   def sc = _sc
