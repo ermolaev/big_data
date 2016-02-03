@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>ermolaev</groupId>
   <artifactId>test-streaming</artifactId>
-  <version>0.103-SNAPSHOT</version>
+  <version>0.12-SNAPSHOT</version>
   <packaging>jar</packaging>
   <name>Kafka Spark Streaming</name>
   <properties>
@@ -314,42 +314,6 @@
             <goals>
               <goal>test</goal>
             </goals>
-          </execution>
-        </executions>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-shade-plugin</artifactId>
-        <version>1.4</version>
-        <configuration>
-          <createDependencyReducedPom>true</createDependencyReducedPom>
-        </configuration>
-        <executions>
-          <execution>
-            <phase>package</phase>
-            <goals>
-              <goal>shade</goal>
-            </goals>
-            <configuration>
-              <skip>true</skip>
-              <transformers>
-                <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer" />
-                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                  <mainClass>
-                  </mainClass>
-                </transformer>
-              </transformers>
-              <filters>
-                <filter>
-                  <artifact>*:*</artifact>
-                  <excludes>
-                    <exclude>META-INF/*.SF</exclude>
-                    <exclude>META-INF/*.DSA</exclude>
-                    <exclude>META-INF/*.RSA</exclude>
-                  </excludes>
-                </filter>
-              </filters>
-            </configuration>
           </execution>
         </executions>
       </plugin>
