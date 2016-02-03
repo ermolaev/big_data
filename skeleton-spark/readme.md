@@ -58,3 +58,68 @@ set javaOptions +="[-Dscala.version=2.11.0] [-Dsbt.version=0.13.9]"; converter/r
 - размер итогового jar файла 60M
 - в spark уже встроена scala, значит можем её не компилировать, экономия 10M
 - пожалуй мой выбор
+
+43516197
+# Nexus Repository Manager 3.0 (Milestone 7 Release)
+```
+cd ~/soft
+wget http://download.sonatype.com/nexus/3/nexus-3.0.0-m7-unix.tar.gz
+tar xvzf nexus-3.0.0-m7-unix.tar.gz
+rm -rf nexus-3.0.0-m7-unix.tar.gz
+./nexus run
+~/soft/nexus-3.0.0-b2016011501/bin/nexus run
+```
+войти как администратор `admin:admin123`
+
+```
+mvn release:clean
+mvn release:prepare
+mvn release:perform
+```
+
+- Nexus 3 версии выдавал не понятные ошибки по которым не понятно было что у меня сделано не так, пришлось установить 2 версию, с ней все норм, интерфейсы сильно отличаются
+- Какой минимальный интервал выполнения проверки репозитория? `1 час`
+- Какие файлы загружает в репозиторий maven? `артефакты`
+
+- Какие настройки надо задать, что б загрузить файл в нексус,требующий аутентификации, с помощью maven ?
+```
+<settings>
+	<servers>
+		<server>
+			<id>nexus</id>
+			<username>admin</username>
+			<password>admin123</password>
+		</server>
+	 </servers>
+</settings>
+<mirrors>
+	<mirror>
+		<id>nexus</id>
+		<mirrorOf>*</mirrorOf>
+		<url>http://localhost:8081/nexus/content/repositories/central</url>
+	</mirror>
+</mirrors>
+```
+
+```
+<scm>
+  <connection>scm:git:git@github.com:ermolaev/big_data.git</connection>
+  <url>scm:git:git@github.com:ermolaev/big_data.git</url>
+  <developerConnection>scm:git:git@github.com:ermolaev/big_data.git</developerConnection>
+  <tag>0.6</tag>
+</scm>
+<distributionManagement>
+  <repository>
+    <id>nexus</id>
+    <name>testrepo releases repository</name>
+    <url>http://localhost:8081/nexus/content/repositories/testrepo</url>
+  </repository>
+  <snapshotRepository>
+    <id>nexus</id>
+    <name>jazzteam snapshot repository</name>
+    <url>http://localhost:8081/nexus/content/repositories/snapshots</url>
+  </snapshotRepository>
+</distributionManagement>
+```
+
+- в нексус заливаются только снапшеты, как залить обычный релиз не понял
