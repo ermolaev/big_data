@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>ermolaev</groupId>
   <artifactId>test-streaming</artifactId>
-  <version>0.6-SNAPSHOT</version>
+  <version>0.7-SNAPSHOT</version>
   <packaging>jar</packaging>
   <name>Kafka Spark Streaming</name>
   <properties>
@@ -26,7 +26,7 @@
     <repository>
      <id>nexus</id>
      <name>testrepo</name>
-     <url>http://localhost:8081/repository/testrepo/</url>
+     <url>http://localhost:8081/nexus/content/repositories/testrepo</url>
    </repository>
   </distributionManagement>
   <repositories>

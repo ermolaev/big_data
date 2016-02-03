@@ -67,12 +67,12 @@ wget http://download.sonatype.com/nexus/3/nexus-3.0.0-m7-unix.tar.gz
 tar xvzf nexus-3.0.0-m7-unix.tar.gz
 rm -rf nexus-3.0.0-m7-unix.tar.gz
 ./nexus run
-nexus-3.0.0-b2016011501/bin/nexus run
+~/soft/nexus-3.0.0-b2016011501/bin/nexus run
 ```
+войти как администратор `admin:admin123`
 
 ```
 mvn release:clean
 mvn release:prepare
 mvn release:perform
 ```
-войти как администратор `admin:admin123`
