@@ -71,6 +71,7 @@ nexus-3.0.0-b2016011501/bin/nexus run
 ```
 
 ```
+mvn release:clean
 mvn release:prepare
 mvn release:perform
 ```
