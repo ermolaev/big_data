@@ -25,7 +25,7 @@
   <distributionManagement>
     <repository>
       <id>nexus</id>
-      <name>testrepo</name>
+      <name>testrepo releases repository</name>
       <url>http://localhost:8081/nexus/content/repositories/testrepo</url>
     </repository>
     <snapshotRepository>
