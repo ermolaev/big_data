@@ -21,7 +21,6 @@ object SimpleKafka {
     // Create context with 2 second batch interval
     val sparkConf = new SparkConf().setAppName("Kafka")
     val ssc = new StreamingContext(sparkConf, Seconds(10))
-    ssc.checkpoint("checkpoint")
 
     // Create direct kafka stream with brokers and topics
     val (zkQuorum, group) = ("localhost:2181", "spark-kafka-consumer")
