@@ -1,0 +1,7 @@
+target
+*.swp
+.gradle
+gradle
+build
+project
+zinc*
