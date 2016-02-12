@@ -8,7 +8,7 @@
     bundle
     librarian-chef install
 
-    # бубен для запуска машин на удаленном сервере
+### бубен для запуска машин на удаленном сервере (не завёлся, ошибка - `waiting for domain to get an ip address`)
     # https://libvirt.org/remote.html
     sudo apt-get install gnutls-bin
     certtool --generate-privkey > cakey.pem
