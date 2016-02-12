@@ -3,23 +3,12 @@
   "chef_type"          : "role",
   "json_class"         : "Chef::Role",
 
-  "default_attributes" : {
-    "ambari" : {
-      "server_fqdn" : "10.7.60.245",
-      "blueprints" : {
-        "blueprint_name" : "ermolaev_blueprint_name",
-        "cluster_name"   : "ermolaev_cluster_name"
-      }
-    }
-  },
-
   "run_list": [
     "recipe[common]",
     "role[system]",
     "role[java_setup]",
     "recipe[ambari::server]",
     "recipe[ambari::agent]",
-    "recipe[set_blueprint]"
-  ],
-  "r": "recipe[ambari::blueprints]"
+    "recipe[ambari::blueprints]"
+  ]
 }

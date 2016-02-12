@@ -10,14 +10,6 @@
     "build-essential" : {
       "compile_time" : true
     },
-    "openssh"         : {
-      "server" : {
-        "permit_root_login"      : "no",
-        "permit_empty_passwords" : "no",
-        "print_lastlog"          : "yes",
-        "print_motd"             : "no"
-      }
-    },
     "ntp"             : {
       "servers" : [
         "0.ru.pool.ntp.org",
@@ -25,30 +17,11 @@
         "2.ru.pool.ntp.org",
         "3.ru.pool.ntp.org"
       ]
-    },
-    "users" : [
-      "admin"
-    ],
-    "authorization" : {
-      "sudo" : {
-        "include_sudoers_d" : true,
-        "users"             : ["vagrant", "admin"],
-        "groups"            : ["admin"],
-        "sudoers_defaults"  : [
-          "env_reset",
-          "secure_path=\"/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\""
-        ]
-      }
     }
   },
   "run_list" : [
     "recipe[apt]",
     "recipe[build-essential]",
-    "recipe[openssh]",
-    "recipe[ntp]",
-    "recipe[locale]",
-    "recipe[openssl]",
-    "recipe[sudo]",
-    "recipe[user::data_bag]"
+    "recipe[ntp]"
   ]
 }

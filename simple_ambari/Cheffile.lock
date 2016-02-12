@@ -3,43 +3,28 @@ SITE
   specs:
     apt (2.9.2)
     build-essential (2.2.4)
-    chef-sugar (3.3.0)
     chef_handler (1.2.0)
-    hostname (0.3.0)
-      hostsfile (>= 0.0.0)
-    hostsfile (2.4.5)
-    iptables (1.1.0)
     java (1.39.0)
       apt (>= 0.0.0)
     locale (1.0.2)
+    mysql (6.1.2)
+      smf (>= 0.0.0)
+      yum-mysql-community (>= 0.0.0)
     ntp (1.10.1)
       windows (>= 0.0.0)
-    openssh (1.6.1)
-      iptables (~> 1.0)
-    openssl (4.4.0)
-      chef-sugar (>= 3.1.1)
-    sudo (2.9.0)
-    user (0.4.2)
+    rbac (1.0.3)
+    smf (2.2.7)
+      rbac (>= 1.0.1)
     windows (1.39.1)
       chef_handler (>= 0.0.0)
-
-GIT
-  remote: https://github.com/ermolaev/ambari.git
-  ref: patch-1
-  sha: 43bce9ba159e60fce0b17845ebd6e455284bb229
-  specs:
-    ambari (0.2.4)
-      apt (>= 0.0.0)
+    yum (3.10.0)
+    yum-mysql-community (0.1.21)
+      yum (>= 3.2)
 
 DEPENDENCIES
-  ambari (>= 0)
   build-essential (>= 0)
-  hostname (>= 0)
   java (>= 0)
   locale (>= 0)
+  mysql (>= 0)
   ntp (>= 0)
-  openssh (>= 0)
-  openssl (>= 0)
-  sudo (>= 0)
-  user (>= 0)
 

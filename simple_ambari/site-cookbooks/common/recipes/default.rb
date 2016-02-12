@@ -1,2 +1,3 @@
-package 'htop'
 package 'vim'
+package 'wget'
+package 'openssl'

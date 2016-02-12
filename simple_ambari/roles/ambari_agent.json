@@ -3,12 +3,6 @@
   "chef_type"          : "role",
   "json_class"         : "Chef::Role",
 
-  "default_attributes" : {
-    "ambari" : {
-      "server_fqdn" : "10.7.60.245"
-    }
-  },
-
   "run_list": [
     "recipe[common]",
     "role[system]",

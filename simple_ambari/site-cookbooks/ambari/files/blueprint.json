@@ -79,7 +79,7 @@
         "properties" : {
           "knox_user" : "knox",
           "knox_group" : "knox",
-          "knox_master_secret" : "SECRET:knox-env:1:knox_master_secret",
+          "knox_master_secret" : "testpass:knox-env:1:knox_master_secret",
           "knox_pid_dir" : "/var/run/knox"
         }
       }
@@ -95,7 +95,7 @@
           "policymgr_external_url" : "http://%HOSTGROUP::host_group_1%:6080",
           "db_user" : "rangeradmin",
           "SQL_CONNECTOR_JAR" : "/usr/share/java/mysql-connector-java.jar",
-          "db_host" : " vm103762.local",
+          "db_host" : " server.ambari.ermolaev",
           "audit_db_name" : "ranger_audit"
         }
       }
@@ -428,7 +428,7 @@
           "xasecure.audit.is.enabled" : "true",
           "xasecure.audit.destination.hdfs" : "true",
           "xasecure.audit.destination.solr.batch.filespool.dir" : "/var/log/knox/audit/solr/spool",
-          "xasecure.audit.destination.hdfs.dir" : "hdfs://vm103762.local:8020/ranger/audit",
+          "xasecure.audit.destination.hdfs.dir" : "hdfs://server.ambari.ermolaev:8020/ranger/audit",
           "xasecure.audit.destination.db.jdbc.url" : "{{audit_jdbc_url}}",
           "xasecure.audit.destination.db.jdbc.driver" : "{{jdbc_driver}}",
           "xasecure.audit.destination.db" : "false",
@@ -634,7 +634,7 @@
           "ranger.unixauth.service.hostname" : "{{ugsync_host}}",
           "ranger.sso.query.param.originalurl" : "originalUrl",
           "ranger.jpa.audit.jdbc.user" : "{{ranger_audit_db_user}}",
-          "ranger.jpa.jdbc.url" : "jdbc:mysql://vm103762.local/ranger",
+          "ranger.jpa.jdbc.url" : "jdbc:mysql://server.ambari.ermolaev/ranger",
           "ranger.service.host" : "{{ranger_host}}",
           "ranger.ldap.bind.dn" : "{{ranger_ug_ldap_bind_dn}}",
           "ranger.service.http.port" : "6080",
@@ -656,7 +656,7 @@
           "ranger.audit.source.type" : "solr",
           "ranger.audit.solr.zookeepers" : "NONE",
           "ranger.externalurl" : "{{ranger_external_url}}",
-          "ranger.service.https.attrib.keystore.pass" : "SECRET:ranger-admin-site:2:ranger.service.https.attrib.keystore.pass",
+          "ranger.service.https.attrib.keystore.pass" : "testpass:ranger-admin-site:2:ranger.service.https.attrib.keystore.pass",
           "ranger.service.https.port" : "6182"
         }
       }
@@ -686,8 +686,8 @@
           "ranger-hdfs-plugin-enabled" : "No",
           "ranger_admin_log_dir" : "/var/log/ranger/admin",
           "ranger-knox-plugin-enabled" : "No",
-          "xasecure.audit.destination.hdfs.dir" : "hdfs://vm103762.local:8020/ranger/audit",
-          "ranger_privelege_user_jdbc_url" : "jdbc:mysql://vm103762.local",
+          "xasecure.audit.destination.hdfs.dir" : "hdfs://server.ambari.ermolaev:8020/ranger/audit",
+          "ranger_privelege_user_jdbc_url" : "jdbc:mysql://server.ambari.ermolaev",
           "ranger-kafka-plugin-enabled" : "No",
           "bind_anonymous" : "false",
           "ranger_user" : "ranger",
@@ -794,7 +794,7 @@
           "accumulo_user" : "accumulo",
           "content" : "\n#! /usr/bin/env bash\nexport HADOOP_PREFIX={{hadoop_prefix}}\nexport HADOOP_CONF_DIR={{hadoop_conf_dir}}\nexport JAVA_HOME={{java64_home}}\nexport ZOOKEEPER_HOME={{zookeeper_home}}\nexport ACCUMULO_LOG_DIR={{log_dir}}\nexport ACCUMULO_CONF_DIR={{conf_dir}}\nexport ACCUMULO_TSERVER_OPTS=\"-Xmx{{accumulo_tserver_heapsize}}m -Xms{{accumulo_tserver_heapsize}}m\"\nexport ACCUMULO_MASTER_OPTS=\"-Xmx{{accumulo_master_heapsize}}m -Xms{{accumulo_master_heapsize}}m\"\nexport ACCUMULO_MONITOR_OPTS=\"-Xmx{{accumulo_monitor_heapsize}}m -Xms{{accumulo_monitor_heapsize}}m\"\nexport ACCUMULO_GC_OPTS=\"-Xmx{{accumulo_gc_heapsize}}m -Xms{{accumulo_gc_heapsize}}m\"\nexport ACCUMULO_GENERAL_OPTS=\"-XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -Djava.net.preferIPv4Stack=true ${ACCUMULO_GENERAL_OPTS}\"\nexport ACCUMULO_OTHER_OPTS=\"-Xmx{{accumulo_other_heapsize}}m -Xms{{accumulo_other_heapsize}}m ${ACCUMULO_OTHER_OPTS}\"\n# what do when the JVM runs out of heap memory\nexport ACCUMULO_KILL_CMD='kill -9 %p'",
           "server_content" : "\n#! /usr/bin/env bash\nexport HADOOP_PREFIX={{hadoop_prefix}}\nexport HADOOP_CONF_DIR={{hadoop_conf_dir}}\nexport JAVA_HOME={{java64_home}}\nexport ZOOKEEPER_HOME={{zookeeper_home}}\nexport ACCUMULO_PID_DIR={{pid_dir}}\nexport ACCUMULO_LOG_DIR={{log_dir}}\nexport ACCUMULO_CONF_DIR={{server_conf_dir}}\nexport ACCUMULO_TSERVER_OPTS=\"-Xmx{{accumulo_tserver_heapsize}}m -Xms{{accumulo_tserver_heapsize}}m\"\nexport ACCUMULO_MASTER_OPTS=\"-Xmx{{accumulo_master_heapsize}}m -Xms{{accumulo_master_heapsize}}m\"\nexport ACCUMULO_MONITOR_OPTS=\"-Xmx{{accumulo_monitor_heapsize}}m -Xms{{accumulo_monitor_heapsize}}m\"\nexport ACCUMULO_GC_OPTS=\"-Xmx{{accumulo_gc_heapsize}}m -Xms{{accumulo_gc_heapsize}}m\"\nexport ACCUMULO_GENERAL_OPTS=\"-XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -Djava.net.preferIPv4Stack=true ${ACCUMULO_GENERAL_OPTS}\"\nexport ACCUMULO_OTHER_OPTS=\"-Xmx{{accumulo_other_heapsize}}m -Xms{{accumulo_other_heapsize}}m ${ACCUMULO_OTHER_OPTS}\"\nexport ACCUMULO_MONITOR_BIND_ALL={{monitor_bind_str}}\n# what do when the JVM runs out of heap memory\nexport ACCUMULO_KILL_CMD='kill -9 %p'",
-          "instance_secret" : "SECRET:accumulo-env:1:instance_secret",
+          "instance_secret" : "testpass:accumulo-env:1:instance_secret",
           "accumulo_master_heapsize" : "1024",
           "accumulo_tserver_heapsize" : "1536",
           "accumulo_other_heapsize" : "1024",
@@ -827,14 +827,14 @@
       "kms-properties" : {
         "properties_attributes" : { },
         "properties" : {
-          "KMS_MASTER_KEY_PASSWD" : "SECRET:kms-properties:2:KMS_MASTER_KEY_PASSWD",
+          "KMS_MASTER_KEY_PASSWD" : "testpass:kms-properties:2:KMS_MASTER_KEY_PASSWD",
           "db_root_user" : "root",
           "DB_FLAVOR" : "MYSQL",
           "db_name" : "rangerkms",
           "db_user" : "rangerkms",
           "SQL_CONNECTOR_JAR" : "/usr/share/java/mysql-connector-java.jar",
           "REPOSITORY_CONFIG_USERNAME" : "keyadmin",
-          "db_host" : "vm103762.local"
+          "db_host" : "server.ambari.ermolaev"
         }
       }
     },
@@ -947,7 +947,7 @@
           "xasecure.audit.is.enabled" : "true",
           "xasecure.audit.destination.hdfs" : "true",
           "xasecure.audit.destination.solr.batch.filespool.dir" : "/var/log/hive/audit/solr/spool",
-          "xasecure.audit.destination.hdfs.dir" : "hdfs://vm103762.local:8020/ranger/audit",
+          "xasecure.audit.destination.hdfs.dir" : "hdfs://server.ambari.ermolaev:8020/ranger/audit",
           "xasecure.audit.destination.db.jdbc.url" : "{{audit_jdbc_url}}",
           "xasecure.audit.destination.db.jdbc.driver" : "{{jdbc_driver}}",
           "xasecure.audit.destination.db" : "false",
@@ -1219,7 +1219,7 @@
           "xasecure.audit.is.enabled" : "true",
           "xasecure.audit.destination.hdfs" : "true",
           "xasecure.audit.destination.solr.batch.filespool.dir" : "/var/log/hadoop/yarn/audit/solr/spool",
-          "xasecure.audit.destination.hdfs.dir" : "hdfs://vm103762.local:8020/ranger/audit",
+          "xasecure.audit.destination.hdfs.dir" : "hdfs://server.ambari.ermolaev:8020/ranger/audit",
           "xasecure.audit.destination.db.jdbc.url" : "{{audit_jdbc_url}}",
           "xasecure.audit.destination.db.jdbc.driver" : "{{jdbc_driver}}",
           "xasecure.audit.destination.db" : "false",
@@ -1587,7 +1587,7 @@
           "xasecure.audit.is.enabled" : "true",
           "xasecure.audit.destination.hdfs" : "true",
           "xasecure.audit.destination.solr.batch.filespool.dir" : "/var/log/hadoop/hdfs/audit/solr/spool",
-          "xasecure.audit.destination.hdfs.dir" : "hdfs://vm103762.local:8020/ranger/audit",
+          "xasecure.audit.destination.hdfs.dir" : "hdfs://server.ambari.ermolaev:8020/ranger/audit",
           "xasecure.audit.destination.db.jdbc.url" : "{{audit_jdbc_url}}",
           "xasecure.audit.destination.db.jdbc.driver" : "{{jdbc_driver}}",
           "xasecure.audit.destination.db" : "false",
@@ -1657,7 +1657,7 @@
           "xasecure.audit.is.enabled" : "true",
           "xasecure.audit.destination.hdfs" : "true",
           "xasecure.audit.destination.solr.batch.filespool.dir" : "/var/log/kafka/audit/solr/spool",
-          "xasecure.audit.destination.hdfs.dir" : "hdfs://vm103762.local:8020/ranger/audit",
+          "xasecure.audit.destination.hdfs.dir" : "hdfs://server.ambari.ermolaev:8020/ranger/audit",
           "xasecure.audit.destination.db.jdbc.url" : "{{audit_jdbc_url}}",
           "xasecure.audit.destination.db.jdbc.driver" : "{{jdbc_driver}}",
           "xasecure.audit.destination.db" : "false",
@@ -1890,7 +1890,7 @@
           "hive.tez.dynamic.partition.pruning.max.data.size" : "104857600",
           "hive.compactor.initiator.on" : "false",
           "hive.smbjoin.cache.rows" : "10000",
-          "atlas.rest.address" : "http://vm103762.local:21000",
+          "atlas.rest.address" : "http://server.ambari.ermolaev:21000",
           "hive.exec.max.dynamic.partitions" : "5000",
           "hive.auto.convert.join" : "true",
           "hive.server2.support.dynamic.service.discovery" : "true",
@@ -2186,7 +2186,7 @@
           "xasecure.audit.is.enabled" : "true",
           "xasecure.audit.destination.hdfs" : "true",
           "xasecure.audit.destination.solr.batch.filespool.dir" : "/var/log/hbase/audit/solr/spool",
-          "xasecure.audit.destination.hdfs.dir" : "hdfs://vm103762.local:8020/ranger/audit",
+          "xasecure.audit.destination.hdfs.dir" : "hdfs://server.ambari.ermolaev:8020/ranger/audit",
           "xasecure.audit.destination.db.jdbc.url" : "{{audit_jdbc_url}}",
           "xasecure.audit.destination.db.jdbc.driver" : "{{jdbc_driver}}",
           "xasecure.audit.destination.db" : "false",
@@ -2204,7 +2204,7 @@
         "properties_attributes" : { },
         "properties" : {
           "hadoop.rpc.protection" : "",
-          "zookeeper.connect" : "vm103763.local:2181,vm103762.local:2181",
+          "zookeeper.connect" : "agent.ambari.ermolaev:2181,server.ambari.ermolaev:2181",
           "ranger-kafka-plugin-enabled" : "No",
           "REPOSITORY_CONFIG_USERNAME" : "kafka",
           "common.name.for.certificate" : "",
@@ -2468,7 +2468,7 @@
         }
       ],
       "configurations" : [ ],
-      "name" : "host_group_2",
+      "name" : "master",
       "cardinality" : "1"
     },
     {
@@ -2568,7 +2568,7 @@
         }
       ],
       "configurations" : [ ],
-      "name" : "host_group_1",
+      "name" : "slaves",
       "cardinality" : "1"
     }
   ],

@@ -3,13 +3,9 @@
 
 site 'https://supermarket.getchef.com/api/v1'
 
-cookbook 'openssh'
-cookbook 'openssl'
 cookbook 'ntp'
 cookbook 'locale'
 cookbook 'build-essential'
 
-cookbook 'ambari', git: 'https://github.com/ermolaev/ambari.git', ref: 'patch-1'
 cookbook 'java'
-cookbook 'user'
-cookbook 'sudo'
+cookbook 'mysql'
