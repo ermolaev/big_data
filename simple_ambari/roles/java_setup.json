@@ -1,0 +1,16 @@
+{
+  "name"               : "java_setup",
+  "chef_type"          : "role",
+  "json_class"         : "Chef::Role",
+
+  "default_attributes" : {
+    "java" : {
+      "install_flavor" : "openjdk",
+      "jdk_version"   : "8"
+    }
+  },
+
+  "run_list": [
+    "recipe[java]"
+  ]
+}

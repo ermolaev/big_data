@@ -1,0 +1,6 @@
+{
+  "id"       : "admin",
+  "groups"   : ["admin"],
+  "password" : "$1$/I.rvGQQ$RkoSnXRxa5POqnq7tbowd1",
+  "ssh_keys" : ["ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDaw+H1IDuY007mIXPZGjeeYsZTm2rQKyj7jQhEQ/LGz42q4eRzj3oRVm8CT/Dm2eBHQbBTx2HgTpvMS/OcoYaED9VVVYr3JAGD5Us6qBg02CQI0ulBtOpxllxlMC69crTu1HxStotiLwBZ2ZBs0Lr6aCen0F5LIDQQrYom+4vh2iAKbshz/AkxIDDCt7I7uENyf3WVEAUSsgfccvqEhm7m5Org+DtZR+FRQdCZ5nxunyopiv8N12CrvuTkcVqL+mbnvdcKyIvDQ70v8pAyMtpz5wT7Ys+ggmUhXobdj8L1VItAGPLZc8J86Fx7YDfTSYvYrXWeJ1H2ditOEGRI2Ejf ermolaev@ermolaev-Dell-System-XPS-15Z"]
+}

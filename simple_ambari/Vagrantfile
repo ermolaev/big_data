@@ -1,0 +1,87 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+# run: vagrant plugin install vagrant-omnibus
+
+# Vagrantfile API/syntax version. Don't touch unless you know what you're doing!
+VAGRANTFILE_API_VERSION = '2'
+
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+
+  config.vm.provider :libvirt do |libvirt|
+    libvirt.host = "176.112.202.213"
+    libvirt.username = "root"
+    libvirt.driver = "qemu"
+    libvirt.uri = "qemu+tcp://root@176.112.202.213/system"
+  end
+  config.vm.box = "trusty64"
+
+
+  config.vm.define :ambari_server do |node|
+    node.vm.network :forwarded_port, guest: 8080, host: 8080, id: 'Interface to Ambari Web and Ambari REST API'
+
+    node.vm.hostname = 'server.ambari.ermolaev'
+    node.vm.network :private_network, :dev => "eth1", ip: "192.168.122.1"
+    node.vm.provision :hosts, sync_hosts: true
+
+
+    node.vm.provider :libvirt do |domain|
+      domain.memory = 4048
+      domain.cpus = 4
+      domain.nested = true
+    end
+
+
+    node.omnibus.chef_version = :latest
+
+    #VAGRANT_JSON = JSON.parse(Pathname(__FILE__).dirname.join('roles', 'ambari_server.json').read)
+
+    node.vm.provision :chef_solo do |chef|
+      chef.cookbooks_path    = ["site-cookbooks", "cookbooks"]
+      chef.roles_path        = "roles"
+      chef.data_bags_path    = "data_bags"
+      chef.provisioning_path = "/tmp/vagrant-chef"
+
+      #chef.run_list = VAGRANT_JSON.delete('run_list')
+      #chef.json     = VAGRANT_JSON
+      chef.add_role "ambari_server"
+      # используется кукбук sudo, который настроен на запрет логина для root и др., для vagrant делаем доступным логин
+      chef.json = { "authorization" => { "sudo" => { "users" => [ "vagrant" ], "passwordless" => true } } }
+    end
+
+  end
+
+
+
+
+  config.vm.define :ambari_agent do |node|
+
+    node.vm.hostname = 'agent.ambari.ermolaev'
+    node.vm.network :private_network, ip: "192.168.0.102"
+    node.vm.provision :hosts, sync_hosts: true
+
+    node.vm.provider :libvirt do |domain|
+      domain.memory = 4048
+      domain.cpus = 4
+    end
+
+    node.omnibus.chef_version = :latest
+
+    #VAGRANT_JSON = JSON.parse(Pathname(__FILE__).dirname.join('nodes', 'vagrant.json').read)
+
+    node.vm.provision :chef_solo do |chef|
+      chef.cookbooks_path    = ["site-cookbooks", "cookbooks"]
+      chef.roles_path        = "roles"
+      chef.data_bags_path    = "data_bags"
+      chef.provisioning_path = "/tmp/vagrant-chef"
+
+      #chef.run_list = VAGRANT_JSON.delete('run_list')
+      #chef.json     = VAGRANT_JSON
+      chef.add_role "ambari_agent"
+      # используется кукбук sudo, который настроен на запрет логина для root и др., для vagrant делаем доступным логин
+      chef.json = { "authorization" => { "sudo" => { "users" => [ "vagrant" ], "passwordless" => true } } }
+    end
+
+  end
+
+end
