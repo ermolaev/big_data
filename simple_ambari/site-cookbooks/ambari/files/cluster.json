@@ -4,10 +4,6 @@
   "host_groups": [
     {
       "name": "master",
-      "hosts": [ { "fqdn": "server.ambari.ermolaev" } ]
-    },
-    {
-      "name": "slaves",
       "hosts": [ { "fqdn": "agent.ambari.ermolaev" } ]
     }
   ]
