@@ -1,0 +1,42 @@
+[client]
+default-character-set          = utf8
+port                           = 3306
+socket                         = /var/run/mysql/mysqld.sock
+
+[mysql]
+default-character-set          = utf8
+
+[mysqld]
+user                           = mysql
+pid-file                       = /var/run/mysql/mysqld.pid
+socket                         = /var/run/mysql/mysqld.sock
+bind-address                   = server.ambari.ermolaev
+port                           = 3306
+datadir                        = /data
+tmpdir                         = /tmp
+log-error                      = /var/log/mysql/error.log
+!includedir /etc/mysql/conf.d
+
+[mysqld_safe]
+socket                         = /var/run/mysql/mysqld.sock
+[client]
+default-character-set          = utf8
+port                           = 3306
+socket                         = /var/run/mysql/mysqld.sock
+
+[mysql]
+default-character-set          = utf8
+
+[mysqld]
+user                           = mysql
+pid-file                       = /var/run/mysql/mysqld.pid
+socket                         = /var/run/mysql/mysqld.sock
+bind-address                   = <% @ambari_server_fqdn %>
+port                           = 3306
+datadir                        = /data
+tmpdir                         = /tmp
+log-error                      = /var/log/mysql/error.log
+!includedir /etc/mysql/conf.d
+
+[mysqld_safe]
+socket                         = /var/run/mysql/mysqld.sock

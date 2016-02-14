@@ -8,4 +8,5 @@ cookbook 'locale'
 cookbook 'build-essential'
 
 cookbook 'java'
+cookbook 'htop'
 cookbook 'mysql'

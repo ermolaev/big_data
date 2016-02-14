@@ -15,3 +15,12 @@ end
 service 'ambari-agent' do
   action [:enable, :restart]
 end
+
+mysql_service 'default' do
+  version '5.6'
+  bind_address 'agent.ambari.ermolaev'
+  port '3306'
+  data_dir '/mysqldata'
+  initial_root_password 'testpass'
+  action [:create, :start]
+end

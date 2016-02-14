@@ -12,3 +12,8 @@
     vagrant up
     vagrant rsync-auto
     vagrant provision
+
+### OpenVPN
+http://blog.amet13.name/2015/11/openvpn-centos-7.html
+yum install openvpn easy-rsa
+sudo yum install firewalld

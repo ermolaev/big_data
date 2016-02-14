@@ -17,11 +17,9 @@ service 'ambari-server' do
   action [:enable, :start]
 end
 
-mysql_service 'default' do
-  version '5.7'
-  bind_address 'server.ambari.ermolaev'
-  port '3306'
-  data_dir '/data'
-  initial_root_password 'testpass'
-  action [:create, :start]
+package 'mysql-connector-java'
+
+# depends ambari[server]
+execute 'jdbc to ambari-server' do
+  command 'ambari-server setup --jdbc-db=mysql --jdbc-driver=/usr/share/java/mysql-connector-java.jar'
 end
