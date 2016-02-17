@@ -7,6 +7,7 @@
     "recipe[common]",
     "role[system]",
     "role[java_setup]",
-    "recipe[ambari::server]"
+    "recipe[ambari::server]",
+    "recipe[ambari::blueprints]"
   ]
 }

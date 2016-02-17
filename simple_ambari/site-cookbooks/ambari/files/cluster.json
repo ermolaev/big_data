@@ -1,12 +1,30 @@
 {
   "blueprint": "ermolaev_blueprint",
   "default_password": "superpass",
-  "host_groups": [
-    { "javax.jdo.option.ConnectionPassword": "testpass" },
-    {  "oozie.service.JPAService.jdbc.password" : "testpass"},
+  "configurations": [
     {
-      "name": "master",
-      "hosts": [ { "fqdn": "agent.ambari.ermolaev" } ]
+      "hive-site": {
+        "properties": {
+          "javax.jdo.option.ConnectionPassword": "testpass"
+        }
+      }
+    },
+    {
+      "oozie-site": {
+        "properties": {
+          "oozie.service.JPAService.jdbc.password": "testpass"
+        }
+      }
+    }
+  ],
+  "host_groups": [
+    {
+      "name": "host_group_1",
+      "hosts": [
+        {
+          "fqdn": "agent.ambari.ermolaev"
+        }
+      ]
     }
   ]
 }
