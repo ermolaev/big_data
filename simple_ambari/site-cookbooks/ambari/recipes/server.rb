@@ -17,9 +17,9 @@ service 'ambari-server' do
   action [:enable, :start]
 end
 
-package 'mysql-connector-java'
+package 'postgresql-jdbc'
 
 # depends ambari[server]
 execute 'jdbc to ambari-server' do
-  command 'ambari-server setup --jdbc-db=mysql --jdbc-driver=/usr/share/java/mysql-connector-java.jar'
+  command 'ambari-server setup --jdbc-db=postgres --jdbc-driver=/usr/share/java/postgresql-jdbc.jar'
 end

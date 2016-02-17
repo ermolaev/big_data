@@ -3,7 +3,10 @@ SITE
   specs:
     apt (2.9.2)
     build-essential (2.2.4)
+    chef-sugar (3.3.0)
     chef_handler (1.2.0)
+    database (4.0.9)
+      postgresql (>= 1.0.0)
     htop (2.0.0)
       yum-repoforge (>= 0.0.0)
     java (1.39.0)
@@ -14,6 +17,12 @@ SITE
       yum-mysql-community (>= 0.0.0)
     ntp (1.10.1)
       windows (>= 0.0.0)
+    openssl (4.4.0)
+      chef-sugar (>= 3.1.1)
+    postgresql (4.0.0)
+      apt (>= 1.9.0)
+      build-essential (>= 0.0.0)
+      openssl (~> 4.0)
     rbac (1.0.3)
     smf (2.2.7)
       rbac (>= 1.0.1)
@@ -30,6 +39,7 @@ SITE
 
 DEPENDENCIES
   build-essential (>= 0)
+  database (>= 0)
   htop (>= 0)
   java (>= 0)
   locale (>= 0)

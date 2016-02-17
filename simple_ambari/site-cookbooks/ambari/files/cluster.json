@@ -2,6 +2,8 @@
   "blueprint": "ermolaev_blueprint",
   "default_password": "superpass",
   "host_groups": [
+    { "javax.jdo.option.ConnectionPassword": "testpass" },
+    {  "oozie.service.JPAService.jdbc.password" : "testpass"},
     {
       "name": "master",
       "hosts": [ { "fqdn": "agent.ambari.ermolaev" } ]

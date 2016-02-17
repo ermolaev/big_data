@@ -49,7 +49,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     node.vm.provision :hosts, sync_hosts: true
 
     node.vm.provider :libvirt do |domain|
-      domain.memory = 12048
+      domain.memory = 15048
       domain.cpus = 4
     end
 
