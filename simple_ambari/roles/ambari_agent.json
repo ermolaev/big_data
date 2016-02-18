@@ -8,6 +8,7 @@
     "role[system]",
     "role[java_setup]",
     "recipe[ambari::agent]",
-    "recipe[ambari::postgresql]"
+    "recipe[ambari::postgresql]",
+    "recipe[ambari::blueprints]"
   ]
 }
