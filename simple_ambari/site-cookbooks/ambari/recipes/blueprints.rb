@@ -8,23 +8,11 @@ blueprint_headers = {
 }
 blueprint_api_url = "http://#{ambari_server_fqdn}:8080/api/v1"
 
-http_request 'check_amabari_server' do
-  url      "#{blueprint_api_url}/hosts"
+http_request 'check_host' do
+  url      "#{blueprint_api_url}/hosts/agent.ambari.ermolaev"
   action   :get
   headers  blueprint_headers
   retry_delay 10
-  notifies :run, 'ruby_block[check_all_hosts]', :immediately
-end
-
-
-count_all_nodes = JSON.parse(File.read(node['ambari']['blueprints']['cluster_json_file']))["host_groups"].inject(0) { |s, i| s + i["hosts"].size }
-ruby_block 'check_all_hosts' do
-  block { }
-  only_if do
-    hosts_json = Zlib::GzipReader.new(  open("#{blueprint_api_url}/hosts", blueprint_headers)  ).read
-    count_complete_nodes = JSON.parse(hosts_json)["items"].size
-    count_all_nodes == count_complete_nodes
-  end
   notifies :post, 'http_request[init_blueprint]', :delayed
   notifies :post, 'http_request[init_cluster]', :delayed
 end
